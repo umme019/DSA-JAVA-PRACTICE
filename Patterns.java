@@ -3,99 +3,24 @@ import java.util.Scanner;
 public class Patterns {
     public static void main(String[]args) {
          Scanner sc = new Scanner(System.in); {
-            int n = 4;
+            int n = 5;
 
-          //upper half
-            for(int i = 1; i<=n; i++){
-                   //1st half
-                   
-             if (i <=2){
-                 for (int j =1;j<=i ;j++){
-                    System.out.print("*");
+            for (int i =1; i<=n ; i++){
+
+                for (int j=1; j<=n-i; j++){
+                  System.out.print(" ");
                 }
-            }else{
+
+                for (int j =1; j<=n; j++){
+                    if (i == 1 || j == 1 || i == n || j==n){
                     System.out.print("*");
-                    for (int j =1; j<=i-2;j++){
+                }else{
                     System.out.print(" ");
                 }
-                System.out.print("*");
-                   }
                 
-            
-
-                   //spaces
-                   int spaces = 2 * (n-i);
-                   for (int j =1;j<=spaces ; j++){
-                    System.out.print(" ");
-                   }
-                
-
-                   //2nd half
-                      if (i <=2){
-                 for (int j =1;j<=i ;j++){
-                    System.out.print("*");
-                }
-            }else{
-                    System.out.print("*");
-                    for (int j =1; j<=i-2;j++){
-                    System.out.print(" ");
-                }
-                System.out.print("*");
-                   }
-                   System.out.println();
-         }
-        
-
-         //lower half
-         for(int i = n; i>=1; i--){
-                   //1st half
-                      if (i <=2){
-                 for (int j =1;j<=i ;j++){
-                    System.out.print("*");
-                }
-            }else{
-                    System.out.print("*");
-                    for (int j =1; j<=i-2;j++){
-                    System.out.print(" ");
-                }
-                System.out.print("*");
             }
-
-                   //spaces
-                   int spaces = 2 * (n-i);
-                   for (int j =1;j<=spaces ; j++){
-                    System.out.print(" ");
-                   }
-
-
-                   //2nd half
-                   if (i <=2){
-                 for (int j =1;j<=i ;j++){
-                    System.out.print("*");
-                }
-            }else{
-                    System.out.print("*");
-                    for (int j =1; j<=i-2;j++){
-                    System.out.print(" ");
-                }
-                System.out.print("*");
-                   } 
-                System.out.println();
-
+             System.out.println();
+         }
+        }
+    } 
 }
-}
-}
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
