@@ -1,26 +1,24 @@
 import java.util.*;
 
 public class Function {
-    public static int printSum(int n){
+    public static void printGreater(int a,int b){
 
-        int sum = 0;
-      for (int i = 1; i<=n ;i++){
-        if (i % 2 !=0){
-            sum += 1; 
-        }
-        }
-          
-        return sum;
+        int n = a + 1;
+        int m = b + 1;
+        System.out.println(n);
+        System.out.println(m);
+        return ;
       }
     
 
         
     public static void main(String[]arg){
     Scanner sc = new Scanner(System.in);
-    int n = sc.nextInt();
+    int a = sc.nextInt();
+    int b = sc.nextInt();
 
-    int sum = printSum(n);
-    System.out.println("Sum of 1 to " + n + " = " + sum);
+    printGreater(a,b);
+    
 
     
 
