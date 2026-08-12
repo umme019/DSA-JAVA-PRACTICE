@@ -1,22 +1,32 @@
 import java.util.*;
 
 public class Function {
-    public static int printAverage(int a,int b, int c){
+    public static int printSum(int n){
 
-      int average = (a+b+c)/3;
-      return average;
-    }
+        int sum = 0;
+      for (int i = 1; i<=n ;i++){
+        if (i % 2 !=0){
+            sum += i; 
+        }
+        }
+          
+        return sum;
+      }
+    
 
         
     public static void main(String[]arg){
     Scanner sc = new Scanner(System.in);
-    int a = sc.nextInt(); 
-    int b = sc.nextInt();
-    int c = sc.nextInt();
+    int n = sc.nextInt();
 
-    int average= printAverage(a,b,c);
+    int sum = printSum(n);
+    System.out.println("Sum of 1 to " + n + " = " + sum);
 
-    System.out.println("Average of given number = " + average);
+    
+
+    
+
+    
 
 }
 }
