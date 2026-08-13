@@ -1,12 +1,7 @@
 import java.util.*;
 
 public class Function {
-    public static int printCircumference(int n){
-
-      
-      int i =(int) ( 2 * Math.PI *  n ) ;
-      return i;
-    }
+    
     
 
         
