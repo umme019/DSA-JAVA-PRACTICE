@@ -1,22 +1,24 @@
 import java.util.*;
 
 public class Function {
-    public static int printCircumference(int n){
+    public static String isEligible(int age){
 
-      
-      int i =(int) ( 2 * Math.PI *  n ) ;
-      return i;
+    if (age > 18){
+      return "Eligible to vote" ;
+ } else{
+    return "Not Eligible to vote";
+ }
     }
     
 
-        
+      
     public static void main(String[]arg){
     Scanner sc = new Scanner(System.in);
-    int n = sc.nextInt();
+    int age = sc.nextInt();
 
-     int Circumference = printCircumference(n);
+     String result = isEligible(age);
 
-    System.out.println(Circumference);
+    System.out.println(result);
     
 
     
