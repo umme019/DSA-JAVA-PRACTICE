@@ -1,25 +1,22 @@
 import java.util.*;
 
 public class Function {
-    public static int printGreater(int a,int b){
+    public static int printCircumference(int n){
 
-      if (a>b){
-        return a;
-      }else {
-        return b;
-      }
+      
+      int i =(int) ( 2 * Math.PI *  n ) ;
+      return i;
     }
     
 
         
     public static void main(String[]arg){
     Scanner sc = new Scanner(System.in);
-    int a = sc.nextInt();
-    int b = sc.nextInt();
+    int n = sc.nextInt();
 
-     int Greater = printGreater(a,b);
+     int Circumference = printCircumference(n);
 
-    System.out.println(Greater);
+    System.out.println(Circumference);
     
 
     
