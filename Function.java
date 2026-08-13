@@ -1,14 +1,14 @@
 import java.util.*;
 
 public class Function {
-    public static void printGreater(int a,int b){
+    public static int printGreater(int a,int b){
 
-        int n = a + 1;
-        int m = b + 1;
-        System.out.println(n);
-        System.out.println(m);
-        return ;
+      if (a>b){
+        return a;
+      }else {
+        return b;
       }
+    }
     
 
         
@@ -17,7 +17,9 @@ public class Function {
     int a = sc.nextInt();
     int b = sc.nextInt();
 
-    printGreater(a,b);
+     int Greater = printGreater(a,b);
+
+    System.out.println(Greater);
     
 
     
