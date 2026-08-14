@@ -4,30 +4,27 @@ public class Arrays{
     public static void main (String args[]){
         Scanner sc = new Scanner (System.in);
 
-       int size = sc.nextInt();
-        int number [] = new int [size];
+        int size = sc.nextInt();
+        int number []= new int[size];
 
         //input
-        for (int i= 0; i<size ; i++){
+        for (int i =0;i<size;i++){
             number[i] = sc.nextInt();
-        }
 
-        int max= Integer.MIN_VALUE;
-        int min = Integer.MAX_VALUE;
+        }
 
         //output
-        for (int i = 0; i<size; i++){
-            if (number[i] > max){
-                  max = number[i];
-            }
-
-            if (number[i]< min){
-                min = number[i];
-            }
-
+        int i;
+        for ( i =0;i< size- 1; i ++){
+            if (number[i] > number [i + 1]){
+                break;
         }
-        System.out.println("Max :" + max);
-        System.out.println("Min :" + min);
-
     }
+
+    if (i == size -1){
+                System.out.println("Ascending Order");
+            }else{
+                System.out.println("Not in Ascending Order");
+            }
+}
 }
