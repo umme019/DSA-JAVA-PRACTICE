@@ -1,24 +1,26 @@
 import java.util.*;
 
 public class Function {
-    public static int printValue(int x,int n){
+    public static void printgcd(int a,int b){
 
-         int result = 1;
-         for(int i =1; i<=n;i ++){
-            result *= x;
-         }
-         return result;
+    for(int i= Math.min(a,b);i>=1;i--){
+        if (a % i == 0 && b % i == 0){
+            System.out.println(i);
+            return;
+        }
     }
+    return;
+          
     
-    
-
         
-    public static void main(String[]arg){
-    Scanner sc = new Scanner(System.in);
-    int x = sc.nextInt();
-    int n = sc.nextInt();
+    }
 
-    System.out.println(printValue(x, n));
+     public static void main(String[]arg){
+    Scanner sc = new Scanner(System.in);
+    int a = sc.nextInt();
+    int b = sc.nextInt();
+
+    printgcd(a, b);
 
     
 
