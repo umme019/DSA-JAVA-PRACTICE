@@ -4,27 +4,31 @@ public class Arrays{
     public static void main (String args[]){
         Scanner sc = new Scanner (System.in);
 
-        int size = sc.nextInt();
-        int number []= new int[size];
+        int rows = sc.nextInt();
+        int columns = sc.nextInt();
+        int [][] numbers= new int[rows][columns];
 
         //input
-        for (int i =0;i<size;i++){
-            number[i] = sc.nextInt();
+        //rows
+        for (int i =0;i<rows;i++){
+        //columns
+        for (int j = 0;j<columns;j++){
+            numbers[i][j] = sc.nextInt();
+        }
 
         }
 
         //output
-        int i;
-        for ( i =0;i< size- 1; i ++){
-            if (number[i] > number [i + 1]){
-                break;
-        }
-    }
-
-    if (i == size -1){
-                System.out.println("Ascending Order");
-            }else{
-                System.out.println("Not in Ascending Order");
+        for (int i = 0;i< rows;i++){
+            for  (int j =0;j<columns ; j++){
+               System.out.print(numbers[i][j] + " ");
             }
+               System.out.println();
+        }
+
+     
+    }
 }
-}
+        
+
+    
