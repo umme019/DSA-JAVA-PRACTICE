@@ -4,16 +4,20 @@ public class Strings{
     public static void main(String []args){
      Scanner sc = new Scanner (System.in);
 
-        String str = sc.next();
-        StringBuilder sb = new StringBuilder(str);
-        StringBuilder reversed = new StringBuilder(str);
-        reversed.reverse();
-        
-        if (sb.toString().equals(reversed.toString())){
-            System.out.println(str + " is a palindrome");
-        } else {
-            System.out.println(str + " is not a palindrome");
+       String charAt = sc.next();
+    StringBuilder sb = new StringBuilder(charAt);
+
+    //delete the vowels (a,e,i,o,u)
+    for (int i = 0; i<sb.length();i++){
+        if (sb.charAt(i) == 'a' || sb.charAt(i) == 'e' || sb.charAt(i) == 'i' || sb.charAt(i) == 'o' || sb.charAt(i) == 'u'){
+         sb.deleteCharAt(i);
+         i--;
         }
+            
+    }
+    System.out.println(sb);
+
+
 
     }
 }
