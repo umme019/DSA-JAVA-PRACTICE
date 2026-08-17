@@ -1,22 +1,17 @@
 import java.util.*;
 
 public class Strings{
-    public static void main (String args[]){
-        Scanner sc = new Scanner (System.in);
-
-        String email = sc.next();
-        String username = " ";
-
-        for (int i = 0; i<email.length(); i++){
-            if (email.charAt(i) == '@'){
-                break;
-
-            }else{
-                username += email.charAt(i);
-            }
+    public static void isPalindrome(String str){
+        
+        StringBuilder sb = new StringBuilder(str);
+        StringBuilder reversed = new StringBuilder(str);
+        reversed.reverse();
+        
+        if (sb.toString().equals(reversed.toString())){
+            System.out.println(str + " is a palindrome");
+        } else {
+            System.out.println(str + " is not a palindrome");
         }
-        System.out.println(username);
-
 
     }
 }
