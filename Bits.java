@@ -6,11 +6,18 @@ public class Bits {
      Scanner sc = new Scanner(System.in);
 
      int n = sc.nextInt();
-     int pos = 1;
-     int bitMask = 1 << pos;
+     String binary = Integer.toBinaryString(n);
 
-     int Number = bitMask | n;
-     System.out.println( Number);
+        int count = 0;
+     for (int i =0;i<binary.length();i ++){
+     if(binary.charAt(i) == '1'){
+        count++;
+        
+     }
+    }
+    System.out.println(count);
+
+     
 
     
 
