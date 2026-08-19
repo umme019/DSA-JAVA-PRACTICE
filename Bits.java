@@ -6,13 +6,14 @@ public class Bits {
      Scanner sc = new Scanner(System.in);
 
      int n = sc.nextInt();
-     int pos = 1;
-     int bitMask = 1 << pos;
 
-     int newNumber = bitMask ^ n;
-     System.out.println( newNumber);
-
-    
+     
+     if ( n >0 && (n & (n -1))== 0){
+        
+    System.out.println( "Number is a power of 2." );
+ }else {
+         System.out.println("Number is not a power of 2.");
+     }
 
 
     }
