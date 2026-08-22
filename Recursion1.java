@@ -1,15 +1,19 @@
 public class Recursion1 {
-    public static void printNumber(int n){
-        if (n == 6){
+    public static void printSum(int i, int n ,int sum){
+        if (i == n){
+            sum+=i;
+            System.out.println(sum);
             return;
         }
-        System.out.println(n);
-        printNumber(n+1);
-    }
+        sum +=i;
+        printSum(i+1, n, sum);
+        
+        }
+    
+    
 
     public static void main(String args[]) {
-        int n = 1;
-        printNumber(n);// n=1
+     printSum(1, 5, 0);
 
     }    
 }
