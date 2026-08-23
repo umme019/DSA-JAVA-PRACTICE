@@ -6,9 +6,14 @@ public class Recursion1 {
         if (x == 0){ //base case 2
             return 0;
         }
-        int xPownm1 = calcPower(x, n-1); //work
-      int xPown = x* xPownm1;
-      return xPown;
+        //if n is even
+        if (n% 2== 0){
+            return calcPower (x, n/2)* calcPower(x, n/2);
+
+        }
+        else { //n is odd
+            return calcPower(x, n/2) * calcPower(x, n/2) * x;
+        }
       
     }
     
