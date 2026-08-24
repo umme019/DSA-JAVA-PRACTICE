@@ -9,8 +9,8 @@ public class Main {
         double area= Math.PI*radius*radius;
         double circumference = 2*Math.PI*radius;
 
-        System.out.println("Area =" + area);
-        System.out.println("Circumference =" + circumference);
+        System.out.println("Area =" + Math.round(area));
+        System.out.println("Circumference =" + Math.round(circumference));
 
 
     }
