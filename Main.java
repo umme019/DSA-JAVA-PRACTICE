@@ -4,12 +4,12 @@ public class Main {
 	
     public static void main(String[] args) {
         Scanner sc = new Scanner (System.in);
-        System.out.println("Enter two number");
-        int a = sc.nextInt();
-        int b = sc.nextInt();
-        
+        System.out.println("Enter Celsius");
+        double celsius = sc.nextDouble();
 
-        System.out.print(b);
-        System.out.print(a);
+        double fahrenheit = ((celsius * 9/5) +32 );
+        System.out.println(fahrenheit);
+        
+         
     }
 }
