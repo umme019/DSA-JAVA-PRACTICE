@@ -6,7 +6,11 @@ public class Loop {
      System.out.println("Enter a number");
      int n = sc.nextInt();
       
-     
+     while (n>0){
+     int digit= n%10;
+     System.out.print(digit);
+     n= n/10;
+    }
 
 
       }
