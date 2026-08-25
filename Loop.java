@@ -5,12 +5,21 @@ public class Loop {
      Scanner sc = new Scanner (System.in);
      System.out.println("Enter a number");
      int n = sc.nextInt();
+     int original = n;
       
-     while (n>0){
-     int digit= n%10;
-     System.out.print(digit);
-     n= n/10;
-    }
+     int reversed = 0;
+     while(n>0){
+       reversed= reversed*10 +n%10;
+       n= n/10;
+     }
+     
+     if (original == reversed){
+      System.out.println("Palindrome");
+     }else{
+      System.out.println("Not Palindrome");
+     }
+    
+    
 
 
       }
