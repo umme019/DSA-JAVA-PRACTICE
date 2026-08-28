@@ -1,28 +1,29 @@
 import java.util.*;
 
 public class Function {
-    public static int printArraySum(int a,int b,int c){
+    public static int findMax(int[] array){
         
 
-        int sum = a + b+ c;
-        System.out.println(sum);
-       return sum;
+        int max = array[0];
+        for (int i= 1;i<array.length;i++){
+         if (array[i] > max){
+            max = array[i];
+         }
+        }
 
-    
+    return max;
         
     }
-    
-           
-        
     
      public static void main(String[]arg){
     Scanner sc = new Scanner(System.in);
     int a = sc.nextInt();
     int b =sc. nextInt();
     int c= sc.nextInt();
-    int result= printArraySum(a, b, c);
+    int []arr ={a,b,c};
+    int result= findMax(arr);
 
-    System.out.println("total : " + result);
+    System.out.println("Max : " + result);
     
 
     
