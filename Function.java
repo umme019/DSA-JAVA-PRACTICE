@@ -1,26 +1,29 @@
 import java.util.*;
 
 public class Function {
-    public static void printgcd(int a,int b){
+    public static int printArraySum(int a,int b,int c){
+        
 
-    for(int i= Math.min(a,b);i>=1;i--){
-        if (a % i == 0 && b % i == 0){
-            System.out.println(i);
-            return;
-        }
-    }
-    return;
-          
+        int sum = a + b+ c;
+        System.out.println(sum);
+       return sum;
+
     
         
     }
-
+    
+           
+        
+    
      public static void main(String[]arg){
     Scanner sc = new Scanner(System.in);
     int a = sc.nextInt();
-    int b = sc.nextInt();
+    int b =sc. nextInt();
+    int c= sc.nextInt();
+    int result= printArraySum(a, b, c);
 
-    printgcd(a, b);
+    System.out.println("total : " + result);
+    
 
     
 
