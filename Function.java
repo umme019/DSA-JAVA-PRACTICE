@@ -1,29 +1,26 @@
 import java.util.*;
 
 public class Function {
-    public static int findMax(int[] array){
-        
-
-        int max = array[0];
-        for (int i= 1;i<array.length;i++){
-         if (array[i] > max){
-            max = array[i];
-         }
+    public static int printArmstrong(int n){
+    
+        int n= a^3+b^3+c^3;
+        if (n == n){
+            System.out.println("Armstrong");
+        }else{
+            System.out.println("Not Armstrong");
         }
 
-    return max;
+    return n;
         
     }
     
      public static void main(String[]arg){
     Scanner sc = new Scanner(System.in);
-    int a = sc.nextInt();
-    int b =sc. nextInt();
-    int c= sc.nextInt();
-    int []arr ={a,b,c};
-    int result= findMax(arr);
+    int n = sc.nextInt();
 
-    System.out.println("Max : " + result);
+    int result= printArmstrong(n);
+
+    System.out.println(" " + result);
     
 
     
